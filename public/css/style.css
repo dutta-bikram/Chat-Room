@@ -218,12 +218,18 @@ footer {
 }
 
 @media (max-width: 700px) {
-  .chat-main {
-    display: block;
+   .chat-main {
+    display: flex;
+    flex-direction: column;
   }
 
   .chat-sidebar {
-    display: none;
+    display: block;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    background: #f9f9f9;
   }
 
   .chat-form-container {
